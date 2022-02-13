@@ -1,0 +1,16 @@
+basic.forever(function () {
+    maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
+    music.playTone(494, music.beat(BeatFraction.Whole))
+    basic.pause(200)
+    maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+    maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
+    music.playTone(587, music.beat(BeatFraction.Whole))
+    basic.pause(200)
+    maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
+})
+basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(1000)
+    basic.showIcon(IconNames.SmallHeart)
+    basic.pause(1000)
+})
